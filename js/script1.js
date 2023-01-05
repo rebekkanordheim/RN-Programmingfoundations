@@ -1,1 +1,4 @@
-console.log("This is script 1");
+var integer = 8;
+var decimal = 7.1;
+
+console.log(integer + decimal)
