@@ -100,3 +100,30 @@ for (var i = 0; i < people.length; i++) {
 }
 
 //Q5 Select the ul element in the HTML file, loop through the array below and create a lielement containing the product name and price properties.
+var products = [
+	{
+		name: "Elephant eggs",
+		price: 45.0,
+	},
+	{
+		name: "Bucket of water",
+		price: 459.99,
+	},
+	{
+		name: "4 cabbages",
+		price: 500.95,
+	},
+];
+
+// select the ul element
+var productContainer = document.querySelector("ul");
+
+for (var i = 0; i < products.length; i++) {
+    productContainer.innerHTML += "<li>" + products[i].name + " - " + products[i].price + "</li>";
+}
+
+//or (this second example will cause the new li items to be double)
+for (var i = 0; i < products.length; i++) {
+    var details = products[i].name + " - " + products[i].price;
+    productContainer.innerHTML = productContainer.innerHTML + "<li>" + details + "</li>";
+}
