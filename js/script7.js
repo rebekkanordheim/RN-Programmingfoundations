@@ -90,7 +90,7 @@ var people = [
 	},
 ];
 
-for (var i = 0; i < people.length, i++) {
+for (var i = 0; i < people.length; i++) {
     var age = people[i].age;
     var fullName = people[i].firstName + " " + people[i].lastName;
     
@@ -98,3 +98,5 @@ for (var i = 0; i < people.length, i++) {
         console.log(fullName);
     }
 }
+
+//Q5 Select the ul element in the HTML file, loop through the array below and create a lielement containing the product name and price properties.
