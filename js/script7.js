@@ -127,3 +127,4 @@ for (var i = 0; i < products.length; i++) {
     var details = products[i].name + " - " + products[i].price;
     productContainer.innerHTML = productContainer.innerHTML + "<li>" + details + "</li>";
 }
+
